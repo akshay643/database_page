@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- ====Local CSS file=== -->
+
+
+    <link rel="stylesheet" href="styles.css">
+
+
+
+    <!-- ====Google Icons==== -->
+</head>
+
+<body>
+
+
+
+
+    <!-- ====Header ==== -->
+    <div id="header">
+        <div> <h3 class="header_text">Load Details</h3></div>
+         <div  id = "button"> <img id = "header-back-button" src="images/arrow_back_FILL0_wght100_GRAD-25_opsz24.png" alt="">  <button type="button" id = "header-button"> <a href="">back</a>  </button> </div>
+       
+    </div>
+
+    <hr><!-- =====Header ends here=== -->
+
+
+
+    <!-- =====main Page====== -->
+
+    <!-- profile card -->
+
+    <aside>
+        <div class="contact">
+
+            <div class="contact-details">
+                <div class="person-info">
+                    <div>
+                        <img class="profile-img" src="images/Profile.png" alt="">
+                    </div>
+                    <div>
+                        <h1 class="name"> Peeyush Gupta</h1>
+                        <p id="para">front end developer, Delhi</p>
+                    </div>
+                </div>
+
+                <div class="contact">
+                    <p><img src="images/Mail.png" class="contact-icons" alt="">
+                        peeyush.gupta@gmail.com</p>
+                    <p> <img src="images/Call.png" alt="" class="contact-icons"> +91 8178111515</p>
+                    <p> <img src="images/Location.png" alt="" class="contact-icons"> Delhi, India</p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ===Score card=== -->
+
+            <div class="points">
+                <div class="points-div">
+                    <h2>53</h2>
+                    <p>Lead Score</p>
+                </div>
+                <div class="points-div">
+                    <h2>24</h2>
+                    <p>Disengaged</p>
+                </div>
+                <div class="points-div">
+                    <h2>2</h2>
+                    <p>Touch Points</p>
+                </div>
+
+            </div>
+        </div>
+
+
+        <!-- ========Lead Properties======= -->
+        <div class="lead-content">
+
+            <header>Lead Properties</header>
+            <table>
+
+                <tr>
+                    <td class="lead-td">Executive</td>
+                    <td>Gagan Kapoor</td>
+
+                </tr>
+                <tr>
+                    <td class="lead-td">Touch Points</td>
+                    <td>54</td>
+
+                </tr>
+
+                <tr>
+                    <td class="lead-td">Lead age</td>
+                    <td>2 days</td>
+
+                </tr>
+
+            </table>
+        </div>
+
+        <!-- multiple divs -->
+
+        <div class="detail-main">
+            <div class="details">
+                <p>Customer History</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Lead Details</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Social Profile</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Tasks</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Notes</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+            <div class="details">
+                <p>Member of Lists</p>
+                <img class="icon" src="images/right.svg" alt="">
+            </div>
+        </div>
+        <div class="right"></div>
+
+        </div>
+
+    </aside>
+
+
+    <!-- ======right section -->
+
+    <section class="rightbar">
+
+        <div class="top-buttons">
+            <button> <a href="#modal"> <img src="images/activity.png" class="right-top-icon" alt=""> Activity</a>
+            </button>
+            <div id="modal">
+                <div class="modal__window">
+                    <h3>Activity</h3>
+                    <a class="modal__close" href="#">X</a>
+                    <hr>
+                    <form method="post" action="/" id="form" class="validate">
+                        <div class="form-field">
+                            <label for="full-name">Activity type: </label>
+                            <input type="text" name="full-name" id="full-name" placeholder="Activity type" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="email-input">Activity date: </label>
+                            <input type="date" required />
+                        </div>
+                        <div class="form-field">
+                            <label for="password-input">Notes: </label>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+
+                        <hr>
+                        <div class="form-field" style="float:right">
+
+                            <button id="add">Add</button>
+                            <button>Close</button>
+                            <!-- <label for=""></label>
+                            <input type="submit" value="Add" />
+                            <label for=""></label>
+                            <input type="submit" value="Close" /> -->
+                        </div>
+                    </form>
+
+
+                </div>
+            </div>
+            <button> <a href=""> <img src="images/Notes.png" class="right-top-icon" alt=""> Note</a> </button>
+            <button> <a href=""></a> <img src="images/Task.png" class="right-top-icon" alt=""> Task</button>
+            <button> <a href=""></a><img src="images/dollar.png" class="right-top-icon" alt=""> Sales Activity </button>
+        </div>
+
+        <h2>Customer History</h2>
+
+        <div class="customer-history">
+            <form action="">
+                <label class="notable-label" for="">Notable activity type: <input type="text" name=""
+                        id="notable-activity">
+                </label>
+                <label class="notable-label" for="">Time:
+                    <input type="date"  name="begin" placeholder="dd-mm-yyyy" value="" min="1997-01-01" max="2030-12-31"
+                        id="notable-activity">
+                </label>
+            </form>
+        </div>
+
+        <!-- ========content===== -->
+
+
+        <div class="content">
+
+
+            <div class="date">
+                <h2>23 July 2019</h2>
+            </div>
+
+
+
+
+            <div class="content1">
+
+
+
+
+                <div class="flex">
+                    <span></span>
+
+
+                    <div class="time">
+                        <p>09:00 am</p>
+                    </div>
+
+                    <div class="main-content">
+                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium deserunt ullam
+                            magnam, facilis inventore quasi illo commodi minus voluptatem?</p>
+                    </div>
+                </div>
+
+                <div class="flex">
+
+
+                    <div class="time">
+                        <p>09:00 am</p>
+                    </div>
+
+                    <div class="main-content">
+                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium deserunt ullam
+                            magnam, facilis inventore quasi illo commodi minus voluptatem?</p>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <span></span>
+            <div class="date">
+                <h2>23 July 2019</h2>
+            </div>
+
+
+            <div class="content1">
+
+                <div class="flex">
+                    <span></span>
+
+
+                    <div class="time">
+                        <p>09:00 am</p>
+                    </div>
+
+                    <div class="main-content">
+                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium deserunt
+                            ullam
+                            magnam, facilis inventore quasi illo commodi minus voluptatem?</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+            <div class="date">
+                <h2>23 July 2019</h2>
+            </div>
+
+
+            <div class="content1">
+
+
+
+
+                <div class="flex">
+                    <span></span>
+
+
+
+                    <div class="time">
+                        <p>09:00 am</p>
+                    </div>
+
+                    <div class="main-content">
+                        <strong>Lorem ipsum dolor sit amet.</strong>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit accusantium deserunt
+                            ullam
+                            magnam, facilis inventore quasi illo commodi minus voluptatem?</p>
+                    </div>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- =========== -->
+
+
+
+
+</body>
+
+</html>
