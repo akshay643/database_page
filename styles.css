@@ -413,8 +413,8 @@ span:before {
 
   .notable-label{
     align-items: flex-start;
-    display: block;
-    width: 80%;
+    display: flex;
+    width: 100%;
     text-align: start;
     
   }
