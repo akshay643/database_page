@@ -429,4 +429,7 @@ span:before {
     width:90%;
     margin: 5px;
   }
+    .modal-form{
+    width: 50%;
+  }
 }
