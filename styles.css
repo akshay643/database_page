@@ -4,6 +4,10 @@
     text-decoration: none;
 }
 
+body{
+    box-sizing: border-box;
+}
+
 #header{
     display: flex;
     justify-content: space-between;
@@ -137,7 +141,9 @@ table {
     font-family: arial, sans-serif;
     border-collapse: collapse;
     width: 100%;
-    border: 1px solid lightgray;
+    margin-left: 10px;
+    
+    border: 0;
 }
 
 .lead-td {
@@ -240,6 +246,7 @@ table {
     display: flex;
     justify-content: center;
     align-items: center;
+     z-index: 999999;
 }
 
 .modal__window {
@@ -263,11 +270,13 @@ table {
     opacity: 0;
 }
 
+
 .modal-form {
     height: 30px;
     margin-top: 10px;
     border-radius: 5px;
     width: 78%;
+   
 }
 
 
@@ -318,6 +327,7 @@ textarea {
 
 .content {
     margin-top: 20px;
+    padding: 30px;
     border: 1px solid lightgray;
 }
 
@@ -338,14 +348,14 @@ span:before {
 
 .date {
     color: white;
-    margin-left: 42px;
+    margin-left: 62px;
     background-color: #001b2c;
     width: fit-content;
     font-size: 10px;
 }
 
 .content1{
-    margin-left: 20px;
+    margin-left: 40px;
     padding:10px  20px;
     border-left: 4px solid black;
 }
@@ -382,11 +392,14 @@ span:before {
 
 /* ===media querie=== */
 
+
 @media only screen and (max-width: 840px) {
   
   aside{
-    width: 100%;
-    overflow: hidden;
+    width: 95%;
+    margin-right: 10px;
+    /* overflow: hidden; */
+    ;
   }
 
   .contact-details{
@@ -399,8 +412,21 @@ span:before {
 
 
   .notable-label{
+    align-items: flex-start;
     display: block;
     width: 80%;
+    text-align: start;
     
+  }
+
+  .top-buttons{
+    /* text-align: center; */
+    margin: 0;
+    display: flex;
+  }
+  
+  .content1{
+    width:90%;
+    margin: 5px;
   }
 }
